@@ -29,6 +29,7 @@ func main() {
 		books[3] += "Kafka's Revenge 2nd Edition"
 
 		_ = books
+		fmt.Printf("books  : %#v\n", books)
 	}
 
 	// This is not necessary, use the short declaration syntax below
@@ -41,6 +42,7 @@ func main() {
 		}
 
 		_ = books
+		fmt.Printf("books  : %#v\n", books)
 	}
 
 	// Use this if you know about the elements
@@ -53,6 +55,7 @@ func main() {
 		}
 
 		_ = books
+		fmt.Printf("books  : %#v\n", books)
 	}
 
 	{
@@ -77,5 +80,6 @@ func main() {
 		}
 
 		_ = books
+		fmt.Printf("books  : %#v\n", books)
 	}
 }

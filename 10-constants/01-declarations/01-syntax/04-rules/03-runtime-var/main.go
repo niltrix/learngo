@@ -8,6 +8,8 @@
 
 package main
 
+import "fmt"
+
 func main() {
 	n := 2
 
@@ -15,4 +17,5 @@ func main() {
 	// const max int = n
 
 	_ = n
+	fmt.Printf("n Value : %d", n)
 }

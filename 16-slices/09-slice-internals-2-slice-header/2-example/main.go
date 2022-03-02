@@ -33,6 +33,9 @@ func main() {
 
 	// data := collection{"slices", "are", "awesome", "period", "!!"}
 
+	s.Show("first's data", data)                           // #1
+	fmt.Printf("first's data slice's header: %p\n", &data) // #3
+
 	change(data) // #1
 
 	s.Show("main's data", data)                           // #1

@@ -22,7 +22,8 @@ func main() {
 
 	// after the inner loop breaks
 	// this parent loop will look for the next queried word
-	for _, q := range query {
+	for i, q := range query {
+		fmt.Printf("%d : %q\n", i, q)
 
 		// "break" will terminate this loop
 		for i, w := range words {

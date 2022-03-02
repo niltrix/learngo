@@ -37,7 +37,7 @@ func main() {
 		ages := agesArray[0:3]
 
 		ages[0] = 100
-		ages[2] = 50
+		ages[2] = 90
 
 		s.Show("agesArray", agesArray[:])
 		s.Show("agesArray's ages", ages)

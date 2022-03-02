@@ -11,6 +11,7 @@ package main
 import (
 	"fmt"
 	"time"
+	"unsafe"
 )
 
 func main() {
@@ -33,4 +34,5 @@ func main() {
 	// type of `h` and its underlying type are different
 	fmt.Printf("Type of h: %T\n", h)
 	fmt.Printf("Type of h's underlying type: %T\n", int64(h))
+	fmt.Printf("Size of h's type: %d bytes\n", unsafe.Sizeof(h))
 }
