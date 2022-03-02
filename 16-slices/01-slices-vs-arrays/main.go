@@ -10,6 +10,8 @@ package main
 
 import "fmt"
 
+// A slice literal is declared just like an array literal, except you leave out the element count
+
 func main() {
 	{
 		// its length is part of its type

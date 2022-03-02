@@ -43,7 +43,7 @@ func main() {
 
 	for cap(part) != 0 {
 		part = part[1:cap(part)]
-		s.Show("part", part)
+		s.Show("part-in-for-loof", part)
 	}
 
 	// #6 backing array's elements become inaccessible

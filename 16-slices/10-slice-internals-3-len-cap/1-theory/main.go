@@ -28,5 +28,7 @@ func main() {
 		s.Show(txt, ages[0:i])
 	}
 
-	s.Show("append", append(ages, 50))
+	appendedAges := append(ages, 50)
+	s.Show("append", appendedAges)
+	fmt.Printf("append len(%d), cap(%d)", len(appendedAges), cap(appendedAges))
 }
