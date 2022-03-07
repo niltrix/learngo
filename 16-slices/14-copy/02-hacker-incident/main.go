@@ -19,10 +19,10 @@ func main() {
 	data := []float64{10, 25, 30, 50}
 
 	// #2: received new data
-	// newData := []float64{80, 90}
-	// for i := 0; i < len(newData); i++ {
-	// 	data[i] = newData[i]
-	// }
+	newData := []float64{80, 90}
+	for i := 0; i < len(newData); i++ {
+		data[i] = newData[i]
+	}
 
 	// #3: use copy
 	// copy(data, []float64{99, 100})
@@ -42,11 +42,11 @@ func main() {
 	// copy(saved, data)
 
 	// #9: clone a slice using append nil (I prefer this)
-	// saved := append([]float64(nil), data...)
+	saved := append([]float64(nil), data...)
 
-	// data[0] = 0 // #8
+	saved[0] = 0 // #8
 
-	// s.Show("Probabilities (saved)", saved) // #7
+	s.Show("Probabilities (saved)", saved) // #7
 
 	// #1: print the probabilities
 	s.Show("Probabilities (data)", data)

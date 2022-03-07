@@ -17,6 +17,11 @@ func main() {
 
 	sliceable := []byte{'f', 'u', 'l', 'l'}
 
+	// Full slice expression has the following syntax
+	// input[low:high:max]
+	// Indices low and high work in the same way as with simple slice expressions.
+	// The only difference is max which sets result’s capacity to max — low (playground)
+
 	s.Show("sliceable", sliceable)
 	s.Show("sliceable[0:3]", sliceable[0:3])
 	s.Show("sliceable[0:3:3]", sliceable[0:3:3])

@@ -10,15 +10,23 @@ package main
 
 import (
 	"fmt"
+
+	s "github.com/inancgumus/prettyslice"
 )
 
 func main() {
 	spendings := make([][]int, 0, 5)
 
+	s.PrintBacking = true
+
 	spendings = append(spendings, []int{200, 100})
+	s.Show("Day", spendings)
 	spendings = append(spendings, []int{25, 10, 45, 60})
+	s.Show("Day", spendings)
 	spendings = append(spendings, []int{5, 15, 35})
+	s.Show("Day", spendings)
 	spendings = append(spendings, []int{95, 10}, []int{50, 25})
+	s.Show("Day", spendings)
 
 	for i, daily := range spendings {
 		var total int

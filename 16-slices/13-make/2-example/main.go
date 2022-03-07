@@ -36,7 +36,7 @@ func main() {
 	// ---------------------------------------------
 	// upTasks := make([]string, len(tasks))
 	// s.Show("upTasks", upTasks)
-
+	//
 	// for _, task := range tasks {
 	// 	upTasks = append(upTasks, strings.ToUpper(task))
 	// 	s.Show("upTasks", upTasks)

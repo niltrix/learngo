@@ -13,6 +13,7 @@ import (
 	"io/ioutil"
 
 	"github.com/inancgumus/learngo/16-slices/exercises/24-fix-the-memory-leak/solution/api"
+	s "github.com/inancgumus/prettyslice"
 )
 
 func main() {
@@ -36,13 +37,16 @@ func main() {
 	// so that its backing array can be cleaned up from memory.
 	millions = last10
 
+	s.Show("millions ", millions)
+	s.Show("last10 ", last10)
+
 	// SOLUTION #2:
 	// Similar to the 1st solution. It does the same thing.
 	// But this code is more concise. Use this one.
 
 	// millions = append([]int(nil), millions[len(millions)-10:]...)
 
-	fmt.Printf("\nLast 10 elements: %d\n\n", last10)
+	fmt.Printf("\nLast 10 elements: %d\n\n", millions)
 
 	// ------------------------------------------------------
 

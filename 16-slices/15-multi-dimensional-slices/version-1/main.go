@@ -10,6 +10,8 @@ package main
 
 import (
 	"fmt"
+
+	s "github.com/inancgumus/prettyslice"
 )
 
 func main() {
@@ -22,6 +24,9 @@ func main() {
 		{500},        // 2nd day
 		{50, 25, 75}, // 3rd day
 	}
+
+	s.PrintBacking = true
+	s.Show("original", spendings)
 
 	for i, daily := range spendings {
 		var total int
